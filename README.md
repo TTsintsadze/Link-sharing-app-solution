@@ -83,8 +83,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub Repo]( )
-- Live Site URL: [Link Sharing App]( )
+- Solution URL: [GitHub Repo](https://github.com/TTsintsadze/Link-sharing-app-solution)
+- Live Site URL: [Link Sharing App](https://link-sharing-app-solution.vercel.app/)
 
 ## My process
 
