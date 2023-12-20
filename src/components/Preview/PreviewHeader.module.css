@@ -1,0 +1,49 @@
+.buttons {
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.back_to_editor_btn {
+  color: #633cff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+  padding: 11px 27px;
+  border-radius: 8px;
+  border: 1px solid #633cff;
+}
+
+.share_link_btn {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+  border-radius: 8px;
+  background: #633cff;
+  padding: 11px 27px;
+}
+
+@media screen and (min-width: 768px) {
+  .background {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+
+    width: 100%;
+    padding-top: 24px;
+    height: 357px;
+    border-radius: 0px 0px 32px 32px;
+    background: var(--purple, #633cff);
+  }
+  .buttons {
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    border-radius: 12px;
+  }
+}

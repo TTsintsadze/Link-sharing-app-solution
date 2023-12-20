@@ -1,0 +1,155 @@
+.body {
+  padding: 0px 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.desktop {
+  display: none;
+  position: relative;
+}
+
+.user_img {
+  width: 98px;
+  height: 98px;
+  position: absolute;
+  top: 163px;
+  left: 232px;
+  border-radius: 96px;
+  border: 2px solid var(--purple, #633cff);
+  background: lightgray 50% / cover no-repeat, #eee;
+}
+
+.user_names {
+  position: absolute;
+  max-width: 100%;
+  width: 100%;
+  overflow: hidden;
+  top: 280px;
+  right: 13px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  text-align: center;
+}
+
+.user_email_container {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 297px;
+  right: 11px;
+  text-align: center;
+}
+
+.user_text_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile_content .user_firstname {
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.mobile_content .user_lastname {
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.mobile_content .user_email {
+  color: #737373;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.main {
+  padding: 24px;
+  background-color: white;
+  border-radius: 12px;
+}
+
+.text_content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.title {
+  color: #333;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.content {
+  color: #737373;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.alert {
+  position: absolute;
+  bottom: -16px;
+  left: 70px;
+  transform: translate(100%, -50%);
+  /* position: absolute;
+  margin: auto;
+  bottom: -70px;
+  right: 0; */
+}
+
+.alert_content {
+  border-radius: 12px;
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  background: #333;
+  box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.1);
+}
+
+.alert_text {
+  color: #fafafa;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    padding: 40px;
+    width: 720px;
+  }
+  .body {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .body {
+    width: 1392px;
+    margin: auto;
+  }
+  .desktop {
+    display: flex;
+  }
+  .main {
+    width: 808px;
+    height: 834px;
+  }
+  .title {
+    font-size: 32px;
+  }
+}

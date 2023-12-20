@@ -1,0 +1,118 @@
+.mainContainer {
+  width: 100%;
+  height: 228px;
+  border-radius: 12px;
+  background: #fafafa;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.headerCont {
+  width: 100%;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.LinkNumAndIcon {
+  width: 85px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.dragNDrop {
+  width: 12px;
+  height: 6px;
+}
+
+.linkNum {
+  color: #737373;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-left: 8px;
+}
+
+.removeBtn {
+  color: #737373;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.platformCont {
+  width: 100%;
+  height: 70px;
+}
+
+.platformH6,
+.linkH6 {
+  color: #333;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 4px;
+}
+
+.rotate180 {
+  transform: rotate(180deg);
+}
+
+.linkInput {
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-left: 55px;
+}
+
+.linkInput:hover {
+  border: none;
+  box-shadow: none;
+}
+
+.linkCont {
+  width: 100%;
+  height: 48px;
+  position: relative;
+}
+
+.linkIcon {
+  position: absolute;
+  top: 16px;
+  left: 26px;
+}
+
+.inputAndError {
+  width: 100%;
+  height: 48px;
+  position: relative;
+}
+
+.checkInputErrorText {
+  position: absolute;
+  color: #ff3939;
+  text-align: right;
+  font-size: 12px;
+  font-weight: 400;
+  top: 12px;
+  right: 16px;
+}
+
+.checkInputError {
+  border: 1px solid #ff3939;
+}
+
+.emptyInputError {
+  border: 1px solid #ff3939;
+}

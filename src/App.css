@@ -1,0 +1,100 @@
+body {
+  background-color: #fafafa;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-purple-pri);
+}
+
+button,
+label[data-select="true"] > div:first-of-type {
+  cursor: pointer;
+}
+
+label {
+  position: relative;
+  display: grid;
+  row-gap: 4px;
+  font: var(--font-body-sm);
+  color: var(--clr-dark-grey);
+}
+
+label::after {
+  position: absolute;
+  right: 16px;
+  color: var(--clr-red);
+  bottom: 15px;
+  pointer-events: none;
+  font: var(--font-body-sm);
+}
+
+label:has(input.invalid)::after,
+label:has(input[data-url="true"].invalid)::after {
+  content: "Can't be empty";
+}
+
+label:has(input[type="password"].invalid)::after {
+  content: "Please check again";
+}
+
+label:has(input[type="text"][data-valid-url="false"])::after {
+  content: "Please check the URL";
+}
+
+label > svg:first-child {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  width: 16px;
+  height: auto;
+}
+
+input {
+  padding-left: 44px;
+  font: var(--font-body-md);
+  color: var(--clr-dark-grey);
+  height: 48px;
+  border: 1px solid var(--clr-border);
+  border-radius: var(--border-radius);
+  transition: 0.3s ease;
+  caret-color: var(--clr-purple-pri);
+}
+
+label:has(input.invalid, input[data-valid-url="false"]) span {
+  color: var(--clr-red);
+}
+
+input::placeholder {
+  color: var(--clr-dark-grey);
+  opacity: 0.5;
+}
+
+input:is(:focus, :hover) {
+  outline: none;
+  border: 1px solid var(--clr-purple-pri);
+  box-shadow: 0 0 32px var(--clr-purple-shadow);
+}
+
+input.invalid,
+input[data-valid-url="false"] {
+  border-color: var(--clr-red);
+}
+
+@media screen and (max-width: 767px) {
+  .label {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  label {
+    width: 396px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  label {
+    width: 364px;
+  }
+}
